@@ -6,37 +6,40 @@
     <title>My Portfolio</title>
     <!-- Bootstrap CSS -->
     <!-- Source: https://getbootstrap.com/docs/4.5/getting-started/introduction/#css -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="styles.css">
     <!-- Imported Font -->
-        <!-- Source: https://fonts.google.com/specimen/Calligraffitti -->
+    <!-- Source: https://fonts.google.com/specimen/Calligraffitti -->
     <link href="https://fonts.googleapis.com/css2?family=Calligraffitti&display=swap" rel="stylesheet">
+    <!-- Source: https://fonts.google.com/specimen/Edu+VIC+WA+NT+Beginner -->
+    <link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400..700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Responsive Navbar (Bootstrap Navbar) -->
-    <!-- Source: https://getbootstrap.com/docs/4.5/components/navbar/ -->
-    <!-- Instructions: Go to the Bootstrap documentation, navigate to "Components" > "Navbar". Copy the example code for a responsive navbar. -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Portfolio</a>
+        <a class="navbar-brand" href="#"><b>Space Discoveries</b></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
+            <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
                     <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="wireframe.html">About Me</a>
+                    <a class="nav-link" href="about_me.html">About Me</a>
                 </li>
             </ul>
+            <!-- Search Bar -->
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
         </div>
     </nav>
 
     <!-- Carousel with Indicators (Bootstrap Carousel) -->
-    <!-- Source: https://getbootstrap.com/docs/4.5/components/carousel/#with-indicators -->
-    <!-- Instructions: Go to the Bootstrap documentation, navigate to "Components" > "Carousel". Copy the example code for a carousel with indicators. -->
     <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
@@ -45,24 +48,29 @@
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/455247872_479318171573468_180724585833408227_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=0024fc&_nc_ohc=NwTUpDp_9LgQ7kNvgFyHJz-&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_Q7cD1QHq6h_FToJKmBwtkO8Dy_4AyXGbWfcztf1c3mOxaHerkg&oe=66E2CE6F " class="d-block w-100" alt="...">
+            <img src="https://static01.nyt.com/images/2022/09/26/obituaries/22Schmidt1/22Schmidt1-videoSixteenByNineJumbo1600.jpg" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
-              <h5>First slide label</h5>
-              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+              <h4>Maarten Schmidt</h4>
+              <p>In 1963, Maarten Schmidt became the first astronomer to identify a Quasar.</p>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="..." class="d-block w-100" alt="...">
+            <img src="https://www.ancient-origins.net/sites/default/files/field/image/Medieval-stargazers.jpg" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <h4>Ancient Greeks</h4>
+              <h5>the exact individuals who first discovered stars are unknown, 
+                as it likely occurred before recorded history. The ancient Greeks 
+                were some of the earliest known civilizations to study and map the stars, 
+                with famous astronomers such as Hipparchus and Ptolemy making significant 
+                contributions to the field.
+              </h5>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="..." class="d-block w-100" alt="...">
+            <img src="https://www.peiresc.org/wp-content/themes/dt-nimble/timthumb.php?src=/wp-content/uploads/2015/04/Peiresc-Finsonius.png&zc=1&w=980&h=300" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
-              <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+              <h4>Orion Nebula</h4>
+              <p>In 1610, Nicolas-Claude Fabri de Pieresc discovered the Orion Nebula</p>
             </div>
           </div>
         </div>
@@ -76,9 +84,63 @@
         </a>
       </div>
 
-    <!-- Bootstrap JS and dependencies -->
-    <!-- Source: https://getbootstrap.com/docs/4.5/getting-started/introduction/#js -->
-    <!-- Instructions: Go to the Bootstrap documentation, navigate to "Getting Started" > "Introduction". Copy the example code for including Bootstrap JS and dependencies. -->
+    <!-- Text Sections -->
+    <div class="text_sections">
+      <div class="container mt-4">
+        <div class="row">
+          <div class="col-md-4">
+                <h2>Quasar</h2>
+                <p>A quasar is an extremely luminous active galactic nucleus. 
+                  It is sometimes known as a quasi-stellar object, abbreviated QSO. 
+                  The emission from an AGN is powered by a supermassive black hole 
+                  with a mass ranging from millions to tens of billions of solar masses, 
+                  surrounded by a gaseous accretion disc.
+                </p>
+            </div>
+            <div class="col-md-4">
+                <h2>Stars</h2>
+                <p>A star is a luminous spheroid of plasma held together by self-gravity. 
+                  The nearest star to Earth is the Sun. Many other stars are visible to the 
+                  naked eye at night; their immense distances from Earth make them appear as 
+                  fixed points of light.
+                </p>
+            </div>
+            <div class="col-md-4">
+                <h2>Orion Nebula</h2>
+                <p>A nebula is a distinct luminescent part of interstellar medium, 
+                  which can consist of ionized, neutral, or molecular hydrogen and 
+                  also cosmic dust. Nebulae are often star-forming regions, such as 
+                  in the Pillars of Creation in the Eagle Nebula.
+                </p>
+            </div>
+        </div>
+      </div>
+    </div>    
+    <!-- Image Sections -->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-4">
+                <img src="https://scx2.b-cdn.net/gfx/news/2019/120-researchersd.jpg" class="img-fluid" alt="Image 4">
+            </div>
+            <div class="col-md-4">
+                <img src="https://th-thumbnailer.cdn-si-edu.com/vOEKWiRsMxC_oEMVaVXcLMgjDOY=/fit-in/1072x0/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer/d7/21/d721f8de-5bef-4fce-9d4c-b197d6b0daef/frf4e7_1.jpg" class="img-fluid" alt="Image 5">
+            </div>
+            <div class="col-md-4">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Crab_Nebula.jpg/800px-Crab_Nebula.jpg" class="img-fluid" alt="Image 5">
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-light text-lg-start mt-4">
+      <div class="container p-4">
+        <div class="contact_info text-center">
+          <p>Email: darwinabreu2018@gmail.com <br>Address: 123 Solar St, Newark, NJ 12345<br>Phone: (123) 456-7890</p>
+        </div>
+      </div>
+  </footer>
+
+    <!-- Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

@@ -1,5 +1,6 @@
 body {
     font-family: 'Calligraffitti', sans-serif;
+    background-color: black;
 }
 
 .navbar {
@@ -9,4 +10,46 @@ body {
 .carousel-item img {
     height: 500px;
     object-fit: cover;
+}
+
+footer {
+    height: 100px;
+    margin: 0px;
+    padding: 0px;
+    background-color: #ffffff;
+}
+
+.text_sections {
+    color: white;
+}
+
+p {
+    font-family: 'Edu VIC WA NT Beginner', sans-serif;
+}
+
+h5 {
+    font-family: 'Edu VIC WA NT Beginner', sans-serif;
+}
+
+.contact_info {
+    margin: 0px;
+    padding: 0px;
+    height: 50px
+}
+
+.container1 {
+    color: white;
+    margin: 10px;
+    padding: 10px;
+}
+
+.yap {
+    padding-bottom: 200px;
+    max-width: 1000px;
+}
+
+.my_picture {
+    max-width: 500px;
+    float: right;
+    margin-right: 250px;
 }
